@@ -1,0 +1,26 @@
+body {
+  background-color: rgb(47, 44, 49);
+  color: white; /* Optional: makes text more readable against dark background */
+}
+
+#videoContainer {
+  background-color: darkslateblue;
+  border-bottom: 5px solid black;
+  padding: 20px; /* Optional: adds some spacing around the video */
+  display: flex;
+  flex-wrap: wrap; /* Allows the videos to wrap to the next line if necessary */
+  justify-content: center; /* Centers the videos within the container */
+  gap: 20px; /* Adds space between the videos */
+}
+
+.videoWrapper {
+  width: 45%; /* Adjust this value to change the video width */
+  max-width: 600px; /* Optional: sets a maximum width for the video */
+  overflow: hidden;
+}
+
+.videoWrapper > video {
+  width: 100%;
+  height: auto; /* Keeps the video's aspect ratio */
+  object-fit: cover;
+}
